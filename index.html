@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obstacle Detection Robot Car Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f172a;
+            color: #e5e7eb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        h2, h3 {
+            color: #22d3ee;
+            margin-top: 25px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #d1d5db;
+            text-align: justify;
+        }
+
+        .card {
+            background-color: #020617;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(56,189,248,0.25);
+        }
+
+        /* IMAGE SIZE CONTROL */
+        .project-img {
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            max-width: 280px;
+            height: auto;
+        }
+
+        .flowchart-img {
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #020617;
+            padding: 12px 25px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0ea5e9;
+            transform: scale(1.05);
+        }
+
+        .btn-group {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            font-size: 14px;
+            color: #94a3b8;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚗 Obstacle Detection & Avoiding Robot Car Dashboard</h1>
+
+    <!-- PROJECT OVERVIEW -->
+    <div class="card">
+        <h2>Project Overview</h2>
+
+        <p>
+            The Obstacle Detection and Avoiding Robot Car is an Arduino-based
+            embedded system project designed to detect obstacles automatically
+            and navigate safely without human intervention. The project aims
+            to demonstrate how sensors, motors, and controllers work together
+            to create an intelligent robotic system.
+        </p>
+
+        <p>
+            The system uses an ultrasonic sensor mounted on a servo motor.
+            The servo motor rotates the ultrasonic sensor to scan the
+            surroundings at different angles. This scanning mechanism helps
+            the robot detect obstacles not only in front, but also on the
+            left and right sides.
+        </p>
+
+        <p>
+            Based on the distance values measured by the ultrasonic sensor,
+            the Arduino processes the data and decides the movement of the
+            robot. A motor driver module is used to control the DC motors
+            connected to the car tyres. Since Arduino cannot supply enough
+            current to drive the motors directly, the motor driver acts as an
+            interface between the Arduino and the motors.
+        </p>
+
+        <p>
+            During normal operation, the robot moves forward while continuously
+            monitoring its path. When an obstacle is detected within a
+            predefined distance, the robot stops immediately. Using the servo
+            motor, the ultrasonic sensor scans left and right to find a clear
+            path, allowing the robot to make intelligent navigation decisions.
+        </p>
+
+        <p>
+            A buzzer is activated whenever an obstacle is detected, providing
+            an audible alert. This project demonstrates the integration of
+            Arduino programming, ultrasonic sensing, servo motor control,
+            motor driving, and embedded system design.
+        </p>
+
+        <p>
+            The Obstacle Detection Robot Car has applications in autonomous
+            vehicles, smart robotics, industrial automation, and safety
+            systems. The project can be further enhanced by adding features
+            such as Bluetooth control, camera vision, or GPS navigation.
+        </p>
+    </div>
+
+    <!-- PROJECT IMAGE -->
+    <div class="card">
+        <h3>Project Image</h3>
+        <img src="obstacle.jpg" class="project-img" alt="Obstacle Detection Robot Car">
+        <div class="btn-group">
+            <a href="obstacle.jpg" target="_blank" class="btn">View Project Image</a>
+        </div>
+    </div>
+
+    <!-- FLOWCHART -->
+    <div class="card">
+        <h3>Project Flowchart</h3>
+        <img src="flowchart.jpg" class="flowchart-img" alt="Obstacle Detection Flowchart">
+        <div class="btn-group">
+            <a href="flowchart.jpg" target="_blank" class="btn">View Flowchart</a>
+        </div>
+    </div>
+
+    <!-- ARDUINO CODE -->
+    <div class="card" style="text-align:center;">
+        <h3>Arduino Code</h3>
+        <p>Click the button below to open the Arduino program file</p>
+        <a href="obstacle.ino" target="_blank" class="btn">Open Arduino Code</a>
+    </div>
+
+    <footer>
+        Arduino Obstacle Detection & Avoiding Robot Car<br>
+        HTML + CSS Dashboard Project
+    </footer>
+
+</div>
+
+</body>
+</html>
+
+
+
+
