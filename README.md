@@ -29,4 +29,4 @@ The Arduino code is available in the `code` folder.
 - Robotics projects
 
 ## 👨‍💻 Author
-Your Name
+Your Name: Tushar kumar
